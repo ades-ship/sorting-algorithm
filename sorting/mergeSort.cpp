@@ -40,6 +40,12 @@ void merge(int arr[], int l, int mid, int r)
          arr[k++]=R[j++];
      }
 }
+
+void display(int arr[],int n)
+{
+   for(int i=0 ; i<n ;i++)
+     cout<<arr[i]<<" ";
+}
 int main()
 {  int n;
    cin>>n;
@@ -47,8 +53,8 @@ int main()
     for(int i=0 ; i<n ;i++)
      cin>>arr[i];
      mergesort(arr,0,n-1);
-     for(int i=0 ; i<n ;i++)
-     cout<<arr[i]<<" ";
+     display(arr,n);
+     
 
     return 0;
 }
